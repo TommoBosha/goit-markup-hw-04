@@ -15,6 +15,7 @@
   --bg-hero: #2f303a;
   --primary-border-color: #ececec;
   --secondary-border-color: #eeeeee;
+  --start-color: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -132,6 +133,18 @@ body {
   padding-top: 200px;
   background: var(--bg-hero);
   text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, var(--start-color), var(--start-color)),
+    url(../images/hero/Imgbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
