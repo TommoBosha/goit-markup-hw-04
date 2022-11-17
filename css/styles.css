@@ -16,6 +16,7 @@
   --bg-hero: #2f303a;
   --primary-border-color: #ececec;
   --secondary-border-color: #eeeeee;
+  --start-color: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -61,6 +62,19 @@ p {
   margin-bottom: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* лого */
 .logo {
   color: var(--text-logo);
@@ -155,6 +169,18 @@ p {
   padding-top: 200px;
   background: var(--bg-hero);
   text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, var(--start-color), var(--start-color)),
+    url(../images/hero/Imgbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -409,7 +435,9 @@ p {
 
 .project-card {
   padding: 20px 24px;
-  border: 1px solid var(--secondary-border-color);
+  border-bottom: 1px solid var(--secondary-border-color);
+  border-right: 1px solid var(--secondary-border-color);
+  border-left: 1px solid var(--secondary-border-color);
 }
 
 .project-title {
