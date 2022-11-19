@@ -488,7 +488,7 @@ p {
 .button {
   padding: 6px 25px;
   color: var(--title-text-color);
-  background: var(--primary-border-color);
+  background: var(--secondary-bg-color);
   font-family: inherit;
   border: none;
   letter-spacing: 0.06em;
