@@ -90,7 +90,6 @@ p {
 .logo-header {
   padding-top: 24px;
   padding-bottom: 25px;
-  outline: transparent;
 }
 
 .accent {
@@ -145,7 +144,6 @@ p {
 .nav-site .link:hover,
 .nav-site .link:focus {
   color: var(--accent-color);
-  outline: transparent;
 }
 
 .nav-contact {
@@ -176,7 +174,6 @@ p {
 .nav-contact .nav-item .link:hover,
 .nav-contact .nav-item .link:focus {
   color: var(--accent-color);
-  outline: transparent;
 }
 .icon {
   margin-left: 0;
@@ -366,7 +363,6 @@ p {
   border-radius: 50%;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  outline: transparent;
 }
 /* клієнти */
 
@@ -400,7 +396,6 @@ p {
 .client-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
-  outline: transparent;
 }
 
 /* футер */
@@ -422,16 +417,17 @@ p {
   background: var(--bg-hero);
 }
 
-.address-part {
-  display: inline-block;
+.footer-container {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.address-nav {
-  display: flex;
-  align-items: baseline;
+.address-part {
+}
 
+.address-nav {
   font-style: normal;
 }
 
@@ -448,7 +444,6 @@ p {
 .address-nav .link:hover,
 .address-nav .link:focus {
   color: var(--accent-color);
-  outline: transparent;
 }
 
 .address-nav-adr {
@@ -458,12 +453,8 @@ p {
 .address-nav-cont {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-container {
-  width: 206px;
-  display: inline-block;
+.footer-socialblock {
   margin-left: 93px;
-  padding-top: 72px;
-  padding-bottom: 100px;
 }
 
 .footer-social {
@@ -522,7 +513,6 @@ p {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: transparent;
 }
 
 .button.primary {
@@ -540,7 +530,6 @@ p {
 .button.primary:focus {
   color: var(--primary-white-color);
   background: var(--secondary-accent-color);
-  outline: transparent;
 }
 
 .button.secondary {
@@ -550,7 +539,6 @@ p {
 .button.secondary:hover,
 .button.secondary:focus {
   color: var(--title-text-color);
-  outline: transparent;
 }
 
 /* Портфоліо */
@@ -572,8 +560,6 @@ p {
 
 .flex-element {
   width: 370px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-img {
@@ -586,7 +572,17 @@ p {
   border-right: 1px solid var(--secondary-border-color);
   border-left: 1px solid var(--secondary-border-color);
 }
+.project-card-link {
+  font-style: normal;
+  color: var(--primary-text-color);
+}
 
+.flex-element:hover,
+.flex-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: transparent;
+}
 .project-title {
   margin-bottom: 4px;
   color: var(--title-text-color);
