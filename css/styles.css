@@ -573,15 +573,16 @@ p {
   border-left: 1px solid var(--secondary-border-color);
 }
 .project-card-link {
+  display: block;
   font-style: normal;
   color: var(--primary-text-color);
+  outline: transparent;
 }
 
-.flex-element:hover,
-.flex-element:focus {
+.project-card-link:hover,
+.project-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: transparent;
 }
 .project-title {
   margin-bottom: 4px;
